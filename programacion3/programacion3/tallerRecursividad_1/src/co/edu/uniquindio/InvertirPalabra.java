@@ -6,7 +6,7 @@ public class InvertirPalabra {
 
         //2. Invertir una palabra de forma recursiva. Invertir cuando se deuelva la recursión.
 
-        String word = "uniquindio";
+        String word = "Hola";
         String reverseWord = invertirPalabra(word);
         System.out.println(reverseWord);
 
