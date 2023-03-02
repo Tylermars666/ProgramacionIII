@@ -1,6 +1,6 @@
 package co.edu.uniquindio;
 
-public class Main {
+public class SumaDiagonal {
     public static void main(String[] args) {
 
         //1. Sumar la diagonal de una matriz de forma recursiva. Retrocediendo en filas y avanzando en columnas
@@ -8,6 +8,7 @@ public class Main {
         int [][] matriz = {{1,2,3},{4,5,6},{7,8,9}};
         int sumaDiagonal = sumarDiagonalMatriz(matriz, 0, 0);
         System.out.println(sumaDiagonal);
+        System.out.println(matriz.length + ", " + matriz[0].length);
 
         }
 
