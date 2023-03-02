@@ -3,7 +3,7 @@ package co.edu.uniquindio;
 public class SumaDiagonal {
     public static void main(String[] args) {
 
-        //1. Sumar la diagonal de una matriz de forma recursiva. Retrocediendo en filas y avanzando en columnas
+        //1. Sumar la diagonal de una matriz de forma recursiva. Avanzando en filas y columnas
 
         int [][] matriz = {{1,2,3},{4,5,6},{7,8,9}};
         int sumaDiagonal = sumarDiagonalMatriz(matriz, 0, 0);
