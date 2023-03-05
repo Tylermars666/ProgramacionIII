@@ -5,7 +5,7 @@ public class SumaDiagonal {
 
 
         //Sumar la diagonal de una matriz de forma recursiva. Retrocediendo en filas y avanzando en columnas
-        int [][] matriz = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        int [][] matriz = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
         int sumaDiagonal = sumarDiagonal(matriz, matriz.length-1, 0);
         System.out.println("Suma diagonal: " + sumaDiagonal);
 
