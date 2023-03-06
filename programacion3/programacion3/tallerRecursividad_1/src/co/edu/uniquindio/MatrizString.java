@@ -2,6 +2,9 @@ package co.edu.uniquindio;
 
 import java.util.ArrayList;
 
+/**
+ * @Author: Omar Piedrahita - Carlos Mancera
+ */
 public class MatrizString {
 
     //Dada una matriz de String de 4 x 4 conformada por palabras,

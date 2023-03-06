@@ -1,5 +1,8 @@
 package co.edu.uniquindio;
 
+/**
+ * @Author: Omar Piedrahita - Carlos Mancera
+ */
 public class InvertirPalabra {
 
     public static void main(String[] args) {

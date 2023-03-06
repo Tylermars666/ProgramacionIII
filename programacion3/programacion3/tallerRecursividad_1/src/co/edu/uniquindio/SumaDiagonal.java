@@ -1,5 +1,9 @@
 package co.edu.uniquindio;
 
+
+/**
+ * @Author: Omar Piedrahita - Carlos Mancera
+ */
 public class SumaDiagonal {
     public static void main(String[] args) {
 
@@ -20,7 +24,7 @@ public class SumaDiagonal {
               return (matriz[i][j] + sumarDiagonal(matriz, i-1, j));
 
       }else{
-            //Si las columnas exceden el rango, se hace llamado recursivo y se reinicia posición en j
+            //Si las columnas exceden el rango, se hace llamado recursivo y se reinicia posición en la columna
           if(i>=0 && j>matriz[i].length-1){
 
               return sumarDiagonal(matriz, i, 0);

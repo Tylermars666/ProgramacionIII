@@ -1,5 +1,9 @@
 package co.edu.uniquindio;
 
+
+/**
+ * @Author: Omar Piedrahita - Carlos Mancera
+ */
 public class ElementoRepetidoVector {
 
     public static void main(String[] args) {

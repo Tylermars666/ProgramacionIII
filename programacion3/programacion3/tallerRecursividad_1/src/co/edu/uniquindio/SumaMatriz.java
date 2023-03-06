@@ -1,5 +1,9 @@
 package co.edu.uniquindio;
 
+
+/**
+ * @Author: Omar Piedrahita - Carlos Mancera
+ */
 public class SumaMatriz {
 
     public static void main( String [] args){
