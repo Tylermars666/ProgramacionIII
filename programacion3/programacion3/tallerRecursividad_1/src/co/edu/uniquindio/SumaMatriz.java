@@ -15,17 +15,18 @@ public class SumaMatriz {
 
         public static int sumarMatriz(int [][] matriz, int i, int j){
 
-            //Caso base: Cuando i == 0 y j==0, return matriz[i][j]
+            //Caso base: Cuando se llegue a la posición 0, 0 de la matriz, se retorna el valor de esa posición
             if(i==0 && j==0){
 
                 return matriz[i][j];
 
-                //Primer caso recursivo
+                //Primer caso recursivo: valor actual de posición + se retrocede en posición de columnas
             } else if (j>0) {
                 return matriz[i][j] + sumarMatriz(matriz, i, j-1);
             }
-                //Segundo caso recursivo
-                return matriz[i][j] + sumarMatriz(matriz, i-1, matriz[0].length-1 );
+                //Segundo caso recursivo: valor actual de posición + se retrocede en filas y se reinicia columnas en
+            // posición final matriz[i].length-1
+                return matriz[i][j] + sumarMatriz(matriz, i-1, matriz[i].length-1 );
 
         }
 

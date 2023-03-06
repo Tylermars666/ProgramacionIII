@@ -12,26 +12,27 @@ public class SumaDiagonal {
     }
 
 
-    public static int sumarDiagonal(int[][] matrix, int i, int j) {
-
+    public static int sumarDiagonal(int[][] matriz, int i, int j) {
+        //Se evalua que i == j para confirmar que la posición se encuentra en la diagonal principal
       if(i==j){
-
-              return (matrix[i][j] + sumarDiagonal(matrix, i-1, j));
+                //En caso de que se encuentre en la diagonal, se suma el valor y se hace el llamado recursivo
+                // retrocediendo en las filas
+              return (matriz[i][j] + sumarDiagonal(matriz, i-1, j));
 
       }else{
+            //Si las columnas exceden el rango, se hace llamado recursivo y se reinicia posición en j
+          if(i>=0 && j>matriz[i].length-1){
 
-          if(i>=0 && j>matrix[i].length-1){
-
-              return sumarDiagonal(matrix, i, 0);
+              return sumarDiagonal(matriz, i, 0);
 
           }else {
+                //Si la posición no corresponde a la diagonal, y aún está dentro del rango, se avanza en columnas
+              if((i>=0 && j<=matriz[i].length-1)){
 
-              if((i>=0 && j<=matrix[i].length-1)){
-
-                return sumarDiagonal(matrix, i, j+1);
+                return sumarDiagonal(matriz, i, j+1);
 
                 }else{
-
+                    //Si ya se recorrieron todas las posiciones se retorna cero para no sumar ningún valor
                   return 0;
 
               }

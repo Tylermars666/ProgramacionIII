@@ -12,11 +12,12 @@ public class InvertirPalabra {
 
     }
         public static String invertirPalabra(String palabra) {
-            //Caso base
-            if (palabra.length() == 0) {
+            //Caso base, si el tamaño de la palabra es 0 o 1, directamente se retorna la palabra.
+            if (palabra.length() <= 1) {
                 return palabra;
             } else {
-                //Caso recursivo
+                //Caso recursivo: Se invoca la función nuevamente quitando la primera letra y posteriormente
+                // concatenando esta misma letra al final para invertir así su orden
                 return invertirPalabra(palabra.substring(1)) + palabra.charAt(0);
             }
         }
